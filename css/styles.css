@@ -1,0 +1,374 @@
+/* Overall Site Styles: Header, Buttons, Footer */
+/* General Site Styles */
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap");
+:root {
+  --accentbright: #2196f3;
+  --mainbright: #ffffff;
+  --mainmid: #757575;
+  --maindark: #212121;
+  --background: #e5e5e5;
+  --footercolor: #2f303a;
+  --accentbackground: #f5f4fa;
+  --accentbox: #eeeeee;
+  --bordercolor: #ececec;
+}
+
+a:link:active {
+  cursor: pointer;
+}
+a:link {
+  text-decoration: none;
+}
+
+body {
+  font-family: roboto;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+button {
+  border-radius: 4px;
+}
+
+ul {
+  list-style: none;
+}
+
+/* Remove Global Styling*/
+* {
+  padding: 0;
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
+
+/* Header */
+
+.header-container {
+  display: flex;
+  align-items: center;
+}
+
+.headerlogo {
+  color: var(--accentbright);
+  font-family: raleway;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 1.174;
+  margin-right: 97px;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  display: block;
+}
+
+.nav-back {
+  background-color: var(--mainbright);
+  border-bottom: 1px solid var(--bordercolor);
+}
+
+.nav-list {
+  display: flex;
+}
+.nav-item {
+  margin-right: 50px;
+}
+
+.nav-item:last-child {
+  margin-right: 0;
+}
+
+.nav-link {
+  color: var(--maindark);
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.172;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  display: block;
+}
+.nav-link-this-page {
+  color: var(--accentbright);
+}
+.nav-link:hover {
+  color: var(--accentbright);
+}
+.nav-contact {
+  color: var(--mainmid);
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.nav-contact:hover {
+  color: var(--accentbright);
+}
+
+.header-contacts-list {
+  margin-left: auto;
+  display: flex;
+}
+.header-contacts-item:not(:last-child) {
+  margin-right: 50px;
+}
+
+/* Footer */
+.footersection {
+  background-color: var(--footercolor);
+  padding: 60px 0;
+}
+.footerlogo {
+  color: var(--accentbright);
+  font-family: raleway;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 1.174;
+  display: block;
+  padding-bottom: 9px;
+}
+.foot {
+  font-style: normal;
+  padding-bottom: 27px;
+}
+.footertext-container {
+  display: block;
+}
+
+.footertext-item:not(:last-child) {
+  margin-bottom: 2px;
+}
+.foot-address {
+  color: var(--mainbright);
+}
+
+.foot-contact {
+  color: var(--mainbright);
+  opacity: 0.6;
+}
+.foot-phone {
+  display: block;
+}
+
+/* Studio Page: Hero, Our Features, Our Team */
+
+/* Hero */
+
+.hero-section {
+  background-color: var(--footercolor);
+  padding: 200px 0;
+}
+
+.hero {
+  font-weight: 900;
+  color: var(--mainbright);
+  font-size: 44px;
+  line-height: 1.36;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.promobutton {
+  font-family: roboto;
+  font-weight: 700;
+  background-color: var(--accentbright);
+  color: var(--mainbright);
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  margin: 0 auto;
+  display: block;
+  padding: 10px 20px;
+  border: none;
+}
+
+.promobutton:hover,
+.promobutton:focus {
+  background-color: var(--mainbright);
+  color: var(--accentbright);
+}
+
+/* Our Features */
+.features-section {
+  padding: 94px 0;
+}
+.feature-subtitle {
+  font-weight: 700;
+  line-height: 1.172;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  color: var(--maindark);
+  margin-bottom: 10px;
+}
+
+.feature-desc {
+  color: var(--mainmid);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.714;
+  letter-spacing: 0.03em;
+}
+
+.features-list {
+  display: flex;
+}
+
+.features-item {
+  width: 270px;
+}
+
+.features-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+/* What we Do */
+.whatwedo-section {
+  padding-bottom: 94px;
+}
+.whatwedo {
+  color: var(--maindark);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.172;
+  letter-spacing: 0.03em;
+  display: block;
+  text-align: center;
+  padding-bottom: 50px;
+}
+
+.whatwedo-container {
+  display: flex;
+}
+.whatwedo-items {
+  justify-content: center;
+}
+
+.whatwedo-items:not(:last-child) {
+  margin-right: 30px;
+}
+/* Our Team */
+
+.ourteamback {
+  background-color: var(--accentbackground);
+  padding: 94x 0;
+}
+
+.ourteamhead {
+  color: var(--maindark);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.172;
+  letter-spacing: 0.03em;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.team-nametag {
+  color: var(--maindark);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.172;
+  letter-spacing: 0.03em;
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+.team-work {
+  font-size: 16px;
+  color: var(--mainmid);
+  letter-spacing: 0.03em;
+  text-align: center;
+  padding-bottom: 30px;
+  background-color: var(--mainbright);
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+.ourteam-container {
+  display: flex;
+  padding-bottom: 94px;
+}
+.ourteam-items {
+  background-color: var(--mainbright);
+}
+.ourteam-items:not(:last-child) {
+  margin-right: 30px;
+}
+/* Portfolio Page */
+
+.project-section {
+  padding: 94px 0;
+}
+.gallery-button-container {
+  display: flex;
+  margin-bottom: 50px;
+  justify-content: center;
+}
+.gallery-button-item:not(:last-child) {
+  margin-right: 9px;
+}
+.gallery-button {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.63;
+  background-color: var(--accentbackground);
+  border: 2px;
+  color: var(--maindark);
+  font-family: roboto;
+  letter-spacing: 0.03em;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  padding-left: 26px;
+  padding-right: 26px;
+}
+.gallery-button:hover {
+  background-color: var(--accentbright);
+  color: var(--mainbright);
+}
+
+.my-project-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: calc(-1 * 30px);
+  margin-left: calc(-1 * 30px);
+}
+.art-back {
+  background-color: var(--mainbright);
+  border: 1px solid var(--accentbox);
+  margin-left: 30px;
+  margin-top: 30px;
+  flex-basis: calc(100% / 3 - 30px);
+}
+
+.art-text {
+  padding: 20px 24px;
+  border-bottom: 1px solid var(--bordercolor);
+  border-left: 1px solid var(--bordercolor);
+  border-right: 1px solid var(--bordercolor);
+}
+.art-name {
+  color: var(--maindark);
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  margin-bottom: 4px;
+}
+
+.art-desc {
+  font-size: 16px;
+  line-height: 1.88;
+  color: var(--mainmid);
+  letter-spacing: 0.03em;
+}
