@@ -339,19 +339,26 @@ img {
 .social-icon-list {
   display: flex;
 }
-.social-circle {
-  fill: var(--accentbright);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+
 .social-icon {
-  height: 20px;
-  width: 20px;
-  margin: 10px;
+  height: 44px;
+  width: 44px;
+  margin: 11px;
+}
+.social-icon:hover {
+  fill: var(--mainbright);
+}
+.circfill {
+  fill: var(--mainbright);
+}
+.circfill:hover {
+  fill: var(--accentbright);
 }
 
 /* Regular Customers */
+.customers-section {
+  padding: 94px 0;
+}
 .customers-head {
   font-family: roboto;
   font-style: normal;
@@ -362,6 +369,7 @@ img {
   letter-spacing: 0.03em;
   text-align: center;
   display: block;
+  margin-bottom: 30px;
 }
 .customers-list {
   display: flex;
