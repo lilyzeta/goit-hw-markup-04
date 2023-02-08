@@ -185,8 +185,6 @@ img {
 .hero-section {
   width: 1600px;
   height: 636px;
-  left: 0px;
-  top: 80px;
 }
 .hero-section {
   background-color: rgba(47, 48, 58, 0.4);
@@ -194,8 +192,6 @@ img {
   background-image: url(/assets/images/herobackgroundimg.jpg);
   width: 1600px;
   height: 636px;
-  left: 0px;
-  top: 80px;
 }
 
 .hero {
@@ -302,6 +298,7 @@ img {
   line-height: 1.172;
   letter-spacing: 0.03em;
   margin-bottom: 50px;
+  text-align: center;
 }
 
 .team-nametag {
@@ -342,11 +339,46 @@ img {
 .social-icon-list {
   display: flex;
 }
+.social-circle {
+  fill: var(--accentbright);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .social-icon {
   height: 20px;
   width: 20px;
   margin: 10px;
 }
+
+/* Regular Customers */
+.customers-head {
+  font-family: roboto;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.172;
+  color: var(--maindark);
+  letter-spacing: 0.03em;
+  text-align: center;
+  display: block;
+}
+.customers-list {
+  display: flex;
+}
+.customers-item {
+  height: 92px;
+  width: 170px;
+  border: solid 1px var(--bordercolor);
+}
+.customers-item:hover {
+  border: solid 1px var(--bordercolor);
+  border-radius: 4px;
+}
+.customers-svg {
+  fill: #c4c4c4;
+}
+
 /* Portfolio Page */
 
 .project-section {
