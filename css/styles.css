@@ -138,11 +138,20 @@ img {
 .header-contacts-item:not(:last-child) {
   margin-right: 30px;
 }
-
+.header-icon {
+  fill: var(--maindark);
+  margin-top: 30px;
+}
 /* Footer */
 .footersection {
   background-color: var(--footercolor);
   padding: 60px 0;
+  display: flex;
+}
+
+.footer-section-items {
+  display: block;
+  margin-right: 30px;
 }
 .footerlogo {
   color: var(--accentbright);
@@ -156,6 +165,7 @@ img {
 .foot {
   font-style: normal;
   margin-bottom: 27px;
+  margin-right: 0px;
 }
 .footertext-container {
   display: block;
@@ -178,6 +188,30 @@ img {
 
 .foot-phone {
   display: block;
+}
+
+.middle-footer-head {
+  color: var(--mainbright);
+  font-family: roboto;
+  font-weight: 700;
+  line-height: 1.71em;
+  letter-spacing: 0.03em;
+  font-size: 14px;
+  font-style: normal;
+}
+.social-icon-footer-list {
+  display: flex;
+}
+.social-icon-footer {
+  fill: var(--mainbright);
+}
+.circfill-footer {
+  fill: var(--mainbright);
+  fill-opacity: 10%;
+}
+.circfill-footer:hover {
+  fill: var(--accentbright);
+  fill-opacity: 100%;
 }
 
 /* Studio Page: Hero, Our Features, Our Team */
@@ -241,7 +275,17 @@ img {
   line-height: 1.714;
   letter-spacing: 0.03em;
 }
+.features-svg-background {
+  background-color: var(--accentbackground);
+  border-radius: 4px;
+  margin-bottom: 30px;
+}
 
+.features-svg {
+  height: 120px;
+  width: 270px;
+  padding: 25px 100px;
+}
 .features-list {
   display: flex;
 }
@@ -340,6 +384,7 @@ img {
   height: 44px;
   width: 44px;
   margin: 11px;
+  fill: var(--bordercolorcustomers);
 }
 .social-icon:hover {
   fill: var(--mainbright);
