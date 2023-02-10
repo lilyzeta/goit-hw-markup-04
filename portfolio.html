@@ -11,36 +11,52 @@
   </head>
 </html>
 <body>
-  <header class="nav-back">
-    <div class="container header-container">
-      <a class="logo headerlogo" href="index.html">WebStudio</a>
-      <nav>
-        <ul class="nav-list">
-          <li class="nav-item">
-            <a class="nav-link" href="index.html" title="Studio">Studio</a>
+<header class="nav-back">
+      <div class="container header-container">
+        <a class="logo headerlogo" href="index.html">WebStudio</a>
+        <nav>
+          <ul class="nav-list">
+            <li class="nav-item">
+              <a
+                class="nav-link nav-link-this-page"
+                href="index.html"
+                title="Studio"
+                >Studio</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="portfolio.html" title="Portfolio"
+                >Portfolio</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" title="Contacts">Contacts</a>
+            </li>
+          </ul>
+        </nav>
+        <ul class="header-contacts-list">
+          <li>
+            <svg class="header-icon envelope">
+              <use href="./assets/images/svg-icons.svg#icon-envelope"></use><use><a href="#"></a></use>
+              <a class="nav-contact" href="mailto:info@devstudio.com"> info@devstudio.com</a>
+            </svg>
+            </li>
+            <li class="header-contacts-item">
+            <a class="nav-contact" href="mailto:info@devstudio.com"> info@devstudio.com</a>
+            
           </li>
-          <li class="nav-item">
-            <a class="nav-link nav-link-this-page" href="portfolio.html" title="Portfolio"
-              >Portfolio</a
-            >
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#" title="Contacts">Contacts</a>
+          <li>
+            <svg class="header-icon phone">
+              <use href="./assets/images/svg-icons.svg#icon-smartphone"></use><use><a href="#"></a></use>
+            <a class="nav-contact" href="tel:+12127724150">+1 212-772-4150</a>
+            </svg>
+            </li>
+            <li class="header-contacts-item">
+            <a class="nav-contact" href="tel:+12127724150">+1 212-772-4150</a>
           </li>
         </ul>
-      </nav>
-      <ul class="header-contacts-list">
-        <li class="header-contacts-item">
-          <a class="nav-contact" href="mailto:info@devstudio.com"
-            >info@devstudio.com</a
-          >
-        </li>
-        <li class="header-contacts-item">
-          <a class="nav-contact" href="tel:+12127724150">+1 212-772-4150</a>
-        </li>
-      </ul>
-    </div>
-  </header>
+      </div>
+    </header>
   <main>      
     <section class="project-section">
     <div class="container">
@@ -177,8 +193,9 @@
     </div>
     </section>
   </main>        
-  <footer class="footersection">
-      <div class="container">
+    <footer class="footersection">
+      <section class="footer-section-list">
+      <div class="footer-section-items container">
         <a class="logo footerlogo" href="index.html">WebStudio</a>
         <address class="foot">
           <ul class="footertext-container">
@@ -188,13 +205,13 @@
                 href="https://goo.gl/maps/9Rd5TcPRFXRM2J766"
                 target="blank"
               >
-                695 Park Ave, New York, NY 10065,<br/> United States
-                </a>
+                695 Park Ave, New York, NY 10065,<br />
+                United States
+              </a>
             </li>
             <li class="footertext-item">
               <a class="foot-contact" href="mailto:info@devstudio.com"
-                >info@devstudio.co 
-    </dm
+                >info@devstudio.com
               </a>
             </li>
             <li class="footertext-item">
@@ -205,5 +222,52 @@
           </ul>
         </address>
       </div>
+      <div class="footer-section-items middle-footer-section">
+        <h3 class="middle-footer-head">FIND US ON</h3>
+        <ul class="social-icon-footer-list">
+        <li>
+                  <svg class="social-icon-footer" width="44px" height="44px">
+                    <circle class="circfill-footer" r="22" fill="orange" cx="22px" cy="22px"/> 
+                  
+                  <svg width="22px" height="22px" x="11" y="11">
+                    <use
+                      href="./assets/images/svg-icons.svg#icon-icon-instagram"
+                    <use><a href="#"></a></use>
+                  </svg>
+                </li>
+                <li>
+                  <svg class="social-icon-footer" width="44px" height="44px">
+                    <circle class="circfill-footer" r="22" fill="orange" cx="22px" cy="22px"/> 
+                  
+                  <svg width="22px" height="22px" x="11" y="11">
+                    <use
+                      href="./assets/images/svg-icons.svg#icon-icon-twitter"
+                    <use><a href="#"></a></use>
+                  </svg>
+                </li>
+                <li>
+                  <svg class="social-icon-footer" width="44px" height="44px">
+                    <circle class="circfill-footer" r="22" fill="orange" cx="22px" cy="22px"/> 
+                  
+                  <svg width="22px" height="22px" x="11" y="11">
+                    <use
+                      href="./assets/images/svg-icons.svg#icon-icon-facebook"
+                    <use><a href="#"></a></use>
+                  </svg>
+                  </li>
+                <li>
+                  <svg class="social-icon-footer" width="44px" height="44px">
+                    <circle class="circfill-footer" r="22" fill="orange" cx="22px" cy="22px"/> 
+                  
+                  <svg width="22px" height="22px" x="11" y="11">
+                    <use
+                      href="./assets/images/svg-icons.svg#icon-icon-linkedin"
+                    <use><a href="#"></a></use>
+                  </svg>
+                </li>
+                </ul>
+      </div>
+      <div class="footer-section-items"></div>
+      </section>
     </footer>
 </body>

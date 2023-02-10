@@ -135,23 +135,43 @@ img {
   margin-left: auto;
   display: flex;
 }
+
 .header-contacts-item:not(:last-child) {
   margin-right: 30px;
 }
+
 .header-icon {
-  fill: var(--maindark);
-  margin-top: 30px;
+  fill: var(--mainmid);
+  margin-right: 10px;
+}
+.envelope {
+  margin-top: 34px;
+  margin-bottom: 34px;
+  margin-right: 10px;
+}
+.phone {
+  margin-top: 32px;
+  margin-right: 10px;
+}
+.header-icon:hover {
+  fill: var(--accentbright);
 }
 /* Footer */
 .footersection {
   background-color: var(--footercolor);
   padding: 60px 0;
   display: flex;
+  align-content: flex-start;
 }
 
+.footer-section-list {
+  display: flex;
+  align-content: flex-start;
+}
 .footer-section-items {
   display: block;
   margin-right: 30px;
+  width: min-content;
 }
 .footerlogo {
   color: var(--accentbright);
@@ -169,6 +189,8 @@ img {
 }
 .footertext-container {
   display: block;
+  width: 250px;
+  margin: 0px;
 }
 
 .foot-address {
@@ -204,6 +226,7 @@ img {
 }
 .social-icon-footer {
   fill: var(--mainbright);
+  margin-right: 10px;
 }
 .circfill-footer {
   fill: var(--mainbright);
@@ -419,6 +442,9 @@ img {
 .customers-item {
   border: solid 1px var(--bordercolorcustomers);
   border-radius: 4px;
+  width: 170px;
+  height: 92px;
+  fill: var(--backgroundoverlay);
 }
 .customers-item:not(:last-child) {
   margin-right: 30px;
@@ -426,12 +452,11 @@ img {
 
 .customers-item:hover {
   border: solid 1px var(--accentbright);
+  fill: var(--accentbright);
 }
 .customers-svg {
-  fill: #c4c4c4;
-}
-.customers-svg:hover {
-  fill: var(--accentbright);
+  width: 170px;
+  height: 92px;
 }
 /* Portfolio Page */
 
