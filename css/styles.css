@@ -12,6 +12,7 @@
   --accentbox: #eeeeee;
   --bordercolor: #ececec;
   --backgroundoverlay: #c4c4c4;
+  --bordercolorcustomers: #afb1b8;
 }
 
 a:link:active {
@@ -182,16 +183,11 @@ img {
 /* Studio Page: Hero, Our Features, Our Team */
 
 /* Hero */
-.hero-section {
-  width: 1600px;
-  height: 636px;
-}
+
 .hero-section {
   background-color: rgba(47, 48, 58, 0.4);
   padding: 200px 0;
   background-image: url(/assets/images/herobackgroundimg.jpg);
-  width: 1600px;
-  height: 636px;
 }
 
 .hero {
@@ -373,20 +369,25 @@ img {
 }
 .customers-list {
   display: flex;
+  justify-content: center;
 }
 .customers-item {
-  height: 92px;
-  width: 170px;
-  border: solid 1px var(--bordercolor);
-}
-.customers-item:hover {
-  border: solid 1px var(--bordercolor);
+  border: solid 1px var(--bordercolorcustomers);
   border-radius: 4px;
+}
+.customers-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.customers-item:hover {
+  border: solid 1px var(--accentbright);
 }
 .customers-svg {
   fill: #c4c4c4;
 }
-
+.customers-svg:hover {
+  fill: var(--accentbright);
+}
 /* Portfolio Page */
 
 .project-section {
