@@ -244,7 +244,7 @@ img {
 .hero-section {
   background-color: rgba(47, 48, 58, 0.4);
   padding: 200px 0;
-  background-image: url(/assets/images/herobackgroundimg.jpg);
+  background-image: url("/assets/images/herobackgroundimg.jpg");
 }
 
 .hero {
