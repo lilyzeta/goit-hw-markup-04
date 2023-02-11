@@ -244,7 +244,12 @@ img {
 .hero-section {
   background-color: rgba(47, 48, 58, 0.4);
   padding: 200px 0;
-  background-image: url("../assets/images/herobackgroundimg.jpg");
+  background-image: linear-gradient
+      (rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url("../assets/images/herobackgroundimg.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .hero {
@@ -305,16 +310,10 @@ img {
 }
 
 .features-svg {
-  height: 120px;
-  width: 270px;
   padding: 25px 100px;
 }
 .features-list {
   display: flex;
-}
-
-.features-item {
-  width: 270px;
 }
 
 .features-item:not(:last-child) {
