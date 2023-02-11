@@ -242,10 +242,9 @@ img {
 /* Hero */
 
 .hero-section {
-  background-color: rgba(47, 48, 58, 0.4);
   padding: 200px 0;
-  background-image: linear-gradient
-      (rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+  background-image: linear-gradient:
+    (rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
     url("../assets/images/herobackgroundimg.jpg");
   background-position: center;
   background-size: cover;
