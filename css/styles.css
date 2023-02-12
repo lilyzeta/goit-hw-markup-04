@@ -63,8 +63,6 @@ img {
 }
 /* Header */
 .header-icon {
-  display: inline-block;
-
   stroke-width: 0;
   stroke: currentColor;
 }
@@ -93,12 +91,8 @@ img {
 .nav-list {
   display: flex;
 }
-.nav-item {
+.nav-item:not(:last-child) {
   margin-right: 50px;
-}
-
-.nav-item:last-child {
-  margin-right: 0;
 }
 
 .nav-link {
@@ -110,10 +104,12 @@ img {
   padding-bottom: 32px;
   display: block;
 }
-.nav-link-this-page {
+
+.nav-link:hover,
+.nav-link:focus {
   color: var(--accentbright);
 }
-.nav-link:hover {
+.nav-link-this-page {
   color: var(--accentbright);
 }
 .nav-contact {
@@ -122,10 +118,12 @@ img {
   font-weight: 500;
   padding-top: 32px;
   padding-bottom: 32px;
-  display: block;
+  display: flex;
+  align-items: center;
 }
 
-.nav-contact:hover {
+.nav-contact:hover,
+.nav-contact:focus {
   color: var(--accentbright);
 }
 
@@ -142,15 +140,7 @@ img {
   fill: currentColor;
   margin-right: 10px;
 }
-.envelope {
-  margin-right: 10px;
-}
-.phone {
-  margin-right: 10px;
-}
-.header-icon:hover {
-  fill: var(--accentbright);
-}
+
 /* Footer */
 .footersection {
   background-color: var(--footercolor);
@@ -159,14 +149,14 @@ img {
   align-content: flex-start;
 }
 
-.footer-section-list {
+.footer-left-part {
   display: flex;
   align-content: flex-start;
 }
-.footer-section-items {
-  display: block;
-  margin-right: 30px;
-  width: min-content;
+.footer-address {
+  font-style: normal;
+  margin-bottom: 27px;
+  margin-right: 0px;
 }
 .footerlogo {
   color: var(--accentbright);
@@ -177,11 +167,12 @@ img {
   display: block;
   margin-bottom: 9px;
 }
-.foot {
-  font-style: normal;
-  margin-bottom: 27px;
-  margin-right: 0px;
+.footer-section-items {
+  display: block;
+  margin-right: 30px;
+  width: min-content;
 }
+
 .footertext-container {
   display: block;
   width: 250px;
@@ -284,6 +275,22 @@ img {
 .features-section {
   padding: 94px 0;
 }
+.features-list {
+  display: flex;
+}
+.features-item:not(:last-child) {
+  margin-right: 30px;
+}
+.features-svg-background {
+  background-color: var(--accentbackground);
+  border-radius: 4px;
+  margin-bottom: 30px;
+}
+
+.features-svg {
+  margin: 25px 100px;
+}
+
 .feature-subtitle {
   font-weight: 700;
   line-height: 1.172;
@@ -299,22 +306,6 @@ img {
   font-size: 14px;
   line-height: 1.714;
   letter-spacing: 0.03em;
-}
-.features-svg-background {
-  background-color: var(--accentbackground);
-  border-radius: 4px;
-  margin-bottom: 30px;
-}
-
-.features-svg {
-  margin: 25px 100px;
-}
-.features-list {
-  display: flex;
-}
-
-.features-item:not(:last-child) {
-  margin-right: 30px;
 }
 
 /* What we Do */
