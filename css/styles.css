@@ -222,16 +222,17 @@ img {
 .social-icon-footer {
   fill: var(--mainbright);
   margin-right: 10px;
-}
-.circfill-footer {
-  fill: var(--mainbright);
-  fill-opacity: 10%;
-}
-.circfill-footer:hover {
-  fill: var(--accentbright);
-  fill-opacity: 100%;
+  width: 20px;
+  height: 20px;
 }
 
+.social-icon-footer-link {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  width: 44px;
+  height: 44px;
+  fill: currentColor;
+}
 /* Studio Page: Hero, Our Features, Our Team */
 
 /* Hero */
@@ -450,14 +451,16 @@ img {
 .customers-item {
   border: solid 1px var(--bordercolorcustomers);
   border-radius: 4px;
-  width: 170px;
-  height: 92px;
+
   fill: var(--backgroundoverlay);
 }
 .customers-item:not(:last-child) {
   margin-right: 30px;
 }
-
+.customers-item-link {
+  width: 170px;
+  height: 92px;
+}
 .customers-item:hover {
   border: solid 1px var(--accentbright);
   fill: var(--accentbright);
