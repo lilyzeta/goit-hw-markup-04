@@ -26,7 +26,8 @@ body {
   font-family: roboto;
 }
 
-button:hover {
+button:hover,
+button:focus {
   cursor: pointer;
 }
 
@@ -411,12 +412,6 @@ img {
 }
 .social-icon:hover {
   fill: var(--mainbright);
-}
-.circfill {
-  fill: var(--mainbright);
-}
-.circfill:hover {
-  fill: var(--accentbright);
 }
 
 /* Regular Customers */
