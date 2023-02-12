@@ -151,7 +151,7 @@ img {
 }
 
 .footer-left-part {
-  display: flex;
+  display: block;
   align-content: flex-start;
 }
 .footer-address {
@@ -168,12 +168,12 @@ img {
   display: block;
   margin-bottom: 9px;
 }
-.footer-section-items {
-  display: block;
-  margin-right: 30px;
-  width: min-content;
+.footer-sections {
+  display: flex;
 }
-
+.middle-footer-section {
+  margin-left: 70px;
+}
 .footertext-container {
   display: block;
   width: 250px;
@@ -211,20 +211,29 @@ img {
 .social-icon-footer-list {
   display: flex;
 }
-.social-icon-footer {
-  fill: var(--mainbright);
-  margin-right: 10px;
-  width: 20px;
-  height: 20px;
-}
 
-.social-icon-footer-link {
-  background: rgba(255, 255, 255, 0.1);
+.footer-social-list-item:not(:last-child) {
+  margin-right: 10px;
+}
+.footer-social-icon-link {
   border-radius: 50%;
   width: 44px;
   height: 44px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--mainbright);
+  fill: currentColor;
+  background: rgba(255, 255, 255, 0.1);
+}
+.footer-social-icon {
   fill: currentColor;
 }
+.footer-social-icon-link:hover,
+.footer-social-icon-link:focus {
+  background: var(--accentbright);
+}
+
 /* Studio Page: Hero, Our Features, Our Team */
 
 /* Hero */
@@ -434,11 +443,8 @@ img {
   display: flex;
   justify-content: center;
 }
-.customers-item {
-  border: solid 1px var(--bordercolorcustomers);
-  border-radius: 4px;
-
-  fill: var(--backgroundoverlay);
+.customers-svg {
+  fill: currentColor;
 }
 .customers-item:not(:last-child) {
   margin-right: 30px;
@@ -446,15 +452,20 @@ img {
 .customers-item-link {
   width: 170px;
   height: 92px;
+  display: flex;
+  border: solid 1px var(--bordercolorcustomers);
+  border-radius: 4px;
+  color: var(--bordercolorcustomers);
+  justify-content: center;
+  align-items: center;
 }
-.customers-item:hover {
+
+.customers-item-link:hover {
   border: solid 1px var(--accentbright);
-  fill: var(--accentbright);
+  color: var(--accentbright);
+  fill: currentColor;
 }
-.customers-svg {
-  width: 170px;
-  height: 92px;
-}
+
 /* Portfolio Page */
 
 .project-section {
